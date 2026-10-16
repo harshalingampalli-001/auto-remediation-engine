@@ -1,0 +1,11 @@
+groups:
+  - name: app_failure_alerts
+    rules:
+      - alert: HighErrorRate
+        expr: rate(http_errors_total[5s]) > 0
+        for: 1s
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate detected"
+          description: "Microservice is returning 5xx errors, triggering automated remediation."
