@@ -7,6 +7,10 @@ An automated self-healing operational system using Python, FastAPI, Prometheus, 
 - **Prometheus (`prometheus`)**: Scrapes `/metrics` every 2s and fires alerts based on error thresholds.
 - **Alertmanager (`alertmanager`)**: Routes critical alerts to the Auto-Remediator webhook.
 - **Auto-Remediator (`remediator`)**: Listens for alerts and triggers automated self-healing APIs.
+- 
+
+
+<img width="1652" height="537" alt="Screenshot 2026-10-16 171351" src="https://github.com/user-attachments/assets/642942c0-f71d-4584-84d1-a883c30e2bf0" />
 
 ## How to Run
 
